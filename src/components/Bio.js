@@ -34,7 +34,7 @@ const discriptionStyle = {
 const imgStyle = {
     borderRadius: "50%",
     position: "absolute",
-    top: "100px"
+    top: "10vh"
 }
 
 const nameStyle ={
@@ -44,7 +44,7 @@ const nameStyle ={
 const codeStyle = {
     fontSize: "32px",
     color: "#777",
-    fontSize: "18px",
+    fontSize: "1em",
 }
 
 

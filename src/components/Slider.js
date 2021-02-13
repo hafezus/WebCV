@@ -19,7 +19,7 @@ const slideUp = (event) =>{
 const Slider = (tabData) => {
     return (
         <div className="slider"  style={{backgroundColor: tabData.bgColor}}>
-            <button onClick={slideUp} style={{...tabStyle, marginLeft: tabData.leftMargin, backgroundColor: tabData.bgColor}} className="sliderBtn">{tabData.title}</button>
+            <button onClick={slideUp} style={{...tabStyle, marginLeft: tabData.leftMargin, backgroundColor: tabData.bgColor, fontSize: '0.8em', wordWrap:'break-word'}} className="sliderBtn">{tabData.title}</button>
             {/* <a href="#">Hi</a> */}
             <main style={contentStyle}>
                 <p className="tabBody" style={{overflowY: 'auto'}}>
