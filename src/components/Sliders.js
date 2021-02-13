@@ -29,7 +29,7 @@ const tabData = [
         `,
 
 		leftMargin: "11vw",
-		bgColor: "#2B665B",
+		bgColor: "#63A599",
 	},
 	{
 		id: 3,
@@ -39,7 +39,7 @@ const tabData = [
         mentorship of Mr. Mohamed Elayyan`,
 
 		leftMargin: "22vw",
-		bgColor: "#6E7B5D",
+		bgColor: "#879576",
 	},
 	{
 		id: 4,
@@ -68,7 +68,8 @@ const tabData = [
         Some exposure to:
 		<br/>
 		▪ MATLAB: Applied Numerical Methods in my
-        Numerical Analysis course at AUS.
+        Numerical Analysis course at AUS
+		<br/>
         ▪ Minitab: Applied statistical methods for sampled
         data to generate data trends of AUS students for
         my Statistics course project.
@@ -79,15 +80,15 @@ const tabData = [
         `,
 
 		leftMargin: "33vw",
-		bgColor: "#516255",
+		bgColor: "#7FA187",
 	},
 	{
 		id: 5,
 		title: "Additional Info",
-		body: "I hold a valid UAE Driving License & a personal car.",
+		body: "I like to cook",
 
 		leftMargin: "44vw",
-		bgColor: "#4E6755",
+		bgColor: "#35553E",
 	},
 ];
 

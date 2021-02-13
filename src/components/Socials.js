@@ -8,10 +8,10 @@ const Socials = () => {
             <a href="https://github.com/hafezus" target="_blank" alt="GitHub">
                 <img src={GitHub} class="socialHandles"></img>
             </a>
-            <a href="https://github.com/hafezus" target="_blank" alt="Instagram">
+            <a href="https://www.instagram.com/hafzus/?hl=en" target="_blank" alt="Instagram">
                 <img src={Instagram} class="socialHandles"></img>
             </a>
-            <a href="https://github.com/hafezus" target="_blank" alt="Twitter">
+            <a href="https://twitter.com/hasminosmin" target="_blank" alt="Twitter">
                 <img src={Twitter} class="socialHandles"></img>
             </a>
         </div>
@@ -21,10 +21,9 @@ const Socials = () => {
 const socialsStyle={
     position: 'absolute',
     display: 'flex',
+    left: '88.3vw',
+    top:"2vw",
     flexDirection: 'row',
-    marginTop: "2vh",
-    right: '1.5vw',
-    padding: '0',
     borderRadius:"50%"
 }
 

@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Socials from './Socials'
 import MyImage from '../MyImage.jpg'
 import SocialHandles from '../SocialHandles.png'
 import AdditionalInfo from '../AdditionalInfo.png'
@@ -6,9 +8,10 @@ import AdditionalInfo from '../AdditionalInfo.png'
 const Bio = () => {
     return (
         <div className = "bio">
+            <Socials />
             <img src={MyImage} style={imgStyle} alt=""></img>
             <h1 style={bioTitle}>
-                Hello, I'm <span style={nameStyle}>Hafez.</span>
+                Hello, I'm Hafez.
             </h1>
             <h2 style={discriptionStyle}><code style={codeStyle}>&lt;code&gt;</code> Software Engineer, Open-Source Advocate, Code Fanatic <code style={codeStyle}>&lt;/code&gt;</code></h2>
         </div>
@@ -19,16 +22,19 @@ const bioTitle={
     fontFamily: 'Consolas',
     fontWeight:'100',
     color: "#fff",
-    fontSize: '4em',
-    padding: '20px',
-    marginTop: "100px"
+    fontSize: '4rem',
+    padding: '2vw',
+    marginTop: "10vh",
+    wordBreak: "break-word"
 }
 
 const discriptionStyle = {
     fontFamily: 'Consolas',
     fontWeight:'100',
     color: "#ccc",
-    paddingBottom: '10px',
+    paddingBottom: '2vh',
+    paddingTop: '2vh',
+    justifyContent: 'center'
 }
 
 const imgStyle = {
@@ -37,14 +43,10 @@ const imgStyle = {
     top: "10vh"
 }
 
-const nameStyle ={
-    fontWeight: '100',
-}
-
 const codeStyle = {
-    fontSize: "32px",
+    fontSize: "3.2rem",
     color: "#777",
-    fontSize: "1em",
+    fontSize: "2rem",
 }
 
 
