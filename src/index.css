@@ -9,6 +9,7 @@
 
 #root{
   height: 100vh;
+  width: 100vw;
   width: auto;
   background-color:white;
 }
@@ -18,8 +19,11 @@
   flex-direction:row;
   justify-content: center;
   height:100vh;
-  background-color: rgb(75, 61, 61);
-  z-index: 0;
+  /* background-color: rgb(75, 61, 61); */
+  background-color: rgb(37, 41, 39);
+  /* background-image: url('./Constellation_BG.png');
+  background-size:1920px 1080px;
+  background-repeat:no-repeat; */
 }
 
 body{
@@ -32,14 +36,16 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #3E5151;
+  background-color: #293030;
+  /* #384949; */
   display: flex;
   height: 100vh;
-  width:90%;
+  width:70%;
   box-shadow: 0px 0px 3px;
   color: rgba(0, 0, 0, 0.438);
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
+  padding: 10px;
 }
 
 .bio:hover{
@@ -85,7 +91,7 @@ img:active{
 
 .slider{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 80vh;
   width: 54.63vw;
   position: absolute;
@@ -117,6 +123,13 @@ img:active{
   text-shadow: 0 0 5px white;
 }
 
+.tabBody{
+  color: white;
+  font-family: 'Poppins';
+  font-weight: 100;
+  padding: 0% 10%;
+  text-align: center;
+}
 
 /* .slider button:focus{
   top: 80vh;
@@ -124,3 +137,48 @@ img:active{
   transition-duration: 1000ms;
 } */
 
+.socialHandles {
+  height: 32px;
+  width: auto;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 50%;
+  z-index: -100px;
+}
+
+.socialHandles:hover{
+  outline: none;
+  box-shadow: 0 0 0;
+  color: white;
+  cursor:pointer;
+  border-radius: 50%;
+  height: 42px;
+  width: auto;
+  animation:cubic-bezier(0.165, 0.84, 0.44, 1)
+}
+
+.socialHandles:active{
+  height: 32px;
+  width: auto;
+  outline: none;
+  box-shadow: 0 0 0;
+  color: white;
+  cursor:default;
+  border-radius: 50%;
+}
+
+li{
+  list-style-type:none;
+}
+
+
+
+/* .socialHandles:hover:last-child{
+  outline: none;
+  box-shadow: 0 0 3px;
+  color: white;
+  cursor:default;
+} */

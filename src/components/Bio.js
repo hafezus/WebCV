@@ -1,5 +1,7 @@
 import React from 'react'
 import MyImage from '../MyImage.jpg'
+import SocialHandles from '../SocialHandles.png'
+import AdditionalInfo from '../AdditionalInfo.png'
 
 const Bio = () => {
     return (
@@ -8,15 +10,7 @@ const Bio = () => {
             <h1 style={bioTitle}>
                 Hello, I'm <span style={nameStyle}>Hafez.</span>
             </h1>
-
-            <h2 style={discriptionStyle}>I'm a <code>Software Engineer</code>. My interests specifically lie in Fullstack Web Development.</h2>
-            <h2 style={discriptionStyle}>Below you can find more information about me, under each of the colored tabs. </h2>
-            <h2 style={discriptionStyle}>You can also find my Socials on the top-right corner of this screen. </h2>
-            {/* <p>
-                Passionate, hardworking, dedicated Fullstack Developer
-                <br/>
-                AUS Graduate - Fall 2016-2020 
-            </p> */}
+            <h2 style={discriptionStyle}><code style={codeStyle}>&lt;code&gt;</code> Software Engineer, Open-Source Advocate, Code Fanatic <code style={codeStyle}>&lt;/code&gt;</code></h2>
         </div>
     )
 }
@@ -31,7 +25,7 @@ const bioTitle={
 }
 
 const discriptionStyle = {
-    fontFamily: 'Courier New',
+    fontFamily: 'Consolas',
     fontWeight:'100',
     color: "#ccc",
     paddingBottom: '10px',
@@ -46,5 +40,12 @@ const imgStyle = {
 const nameStyle ={
     fontWeight: '100',
 }
+
+const codeStyle = {
+    fontSize: "32px",
+    color: "#777",
+    fontSize: "18px",
+}
+
 
 export default Bio

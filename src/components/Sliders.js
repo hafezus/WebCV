@@ -1,49 +1,54 @@
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import React from "react";
 import Slider from "./Slider";
 
 const tabData = [
 	{
-        id: 1,
-        title: 'Job Description',
-        body: `Passionate and hardworking Computer Science graduate
+		id: 1,
+		title: "Job Description",
+		body: `Passionate and hardworking Computer Science graduate
         from The American University of Sharjah (AUS), seeking an
         entry-level Software Engineering job, specifically full-stack
         web development & mobile application development.`,
 
-        leftMargin: "0vw",
-        bgColor: "#638C71"
+		leftMargin: "0vw",
+		bgColor: "#638C71",
 	},
 	{
-        id: 2,
-        title: 'Education',
-        body: `American University of Sharjah (AUS), BSc. Computer
-        Science, Fall 2020
-        Our Own High School (OOHS), Physics, Chemistry,
+		id: 2,
+		title: "Education",
+		body: `
+		<ul>
+		<li> ▪ American University of Sharjah (AUS), BSc. Computer
+        Science, Fall 2020</li>
+        <br/>
+		<li> ▪ Our Own High School (OOHS), Physics, Chemistry,
         Mathematics, Computer Science (PCMC),
-        2014-2016
+        2014-2016</li>
+		</ul>
         `,
 
-        leftMargin: "11vw",
-        bgColor: "#489E8F"
+		leftMargin: "11vw",
+		bgColor: "#2B665B",
 	},
 	{
-        id: 3,
-        title: 'Work Experience',
-        body: `Beta IT internship – explored cloud security and
+		id: 3,
+		title: "Work Experience",
+		body: `Beta IT internship <br/> ▪ Explored cloud security and
         IaaS services in Google Cloud Platform under the
         mentorship of Mr. Mohamed Elayyan`,
-        
-        leftMargin: "22vw",
-        bgColor: "#97AF77"
+
+		leftMargin: "22vw",
+		bgColor: "#6E7B5D",
 	},
 	{
-        id: 4,
-        title: 'Skills',
-        body: `Proficient with:
-        ▪ JavaScript (ES6)
+		id: 4,
+		title: "Skills",
+		body: `Proficient with:
+		<br/>
+		▪ JavaScript (ES6)
         ▪ Node.js/Express
-        ▪ HTML/CSS
+        ▪ HTML/CSS<
         ▪ Java
         ▪ Kotlin
         ▪ Python 3
@@ -55,11 +60,14 @@ const tabData = [
         ▪ External APIs
         ▪ Firebase Firestore DB
         ▪ Figma (UX/UI Design)
-        ▪ Mongoose DB
+        ▪ Mongoose DB</li>
         ▪ MySQL Relational DB
         ▪ C++
+		<br/>
+		<br/>
         Some exposure to:
-        ▪ MATLAB: Applied Numerical Methods in my
+		<br/>
+		▪ MATLAB: Applied Numerical Methods in my
         Numerical Analysis course at AUS.
         ▪ Minitab: Applied statistical methods for sampled
         data to generate data trends of AUS students for
@@ -70,17 +78,17 @@ const tabData = [
         Development
         `,
 
-        leftMargin: "33vw",
-        bgColor: "#549F65"
-    },
-    {
-        id: 5,
-        title: 'Additional Info',
-        body: "I hold a valid UAE Driving License & a personal car.",
+		leftMargin: "33vw",
+		bgColor: "#516255",
+	},
+	{
+		id: 5,
+		title: "Additional Info",
+		body: "I hold a valid UAE Driving License & a personal car.",
 
-        leftMargin: "44vw",
-        bgColor: "#79D192"
-	}
+		leftMargin: "44vw",
+		bgColor: "#4E6755",
+	},
 ];
 
 const Sliders = () => {
@@ -89,29 +97,25 @@ const Sliders = () => {
 			className="sliders"
 			style={{ position: "absolute", bottom: "-80vh", backgroundColor: "red" }}
 		>
-            
-			<Slider {...tabData[0]} />
+			{/* <Slider {...tabData[0]} />
 			<Slider {...tabData[1]} />
 			<Slider {...tabData[2]} />
 			<Slider {...tabData[3]} />
-			<Slider {...tabData[4]} />
-			{/* <button style={tabStyle}>About</button>
-            <button style={tabStyle}>Education</button>
-            <button style={tabStyle}>Work Experience</button>
-            <button style={tabStyle}>Skills</button>
-            <button style={tabStyle}>Additional Information</button> */}
-			{/* Replace buttons with a slider component */}
-            
+			<Slider {...tabData[4]} /> */}
+			{tabData.map((sliderData, idx) => (
+                <Slider {...sliderData} />    
+			))}
+
 		</div>
 	);
 };
 
 Sliders.defaultProps = {
-    tabData: {}
-}
+	tabData: {},
+};
 
 Sliders.propTypes = {
-    tabData: PropTypes.object
-}
+	tabData: PropTypes.object,
+};
 
 export default Sliders;

@@ -22,8 +22,9 @@ const Slider = (tabData) => {
             <button onClick={slideUp} style={{...tabStyle, marginLeft: tabData.leftMargin, backgroundColor: tabData.bgColor}} className="sliderBtn">{tabData.title}</button>
             {/* <a href="#">Hi</a> */}
             <main style={contentStyle}>
-                <p>
-                    {tabData.body}
+                <p className="tabBody" style={{overflowY: 'auto'}}>
+                    <div dangerouslySetInnerHTML={{__html: tabData.body}}></div>
+                    {/* {tabData.body   } */}
                 </p>
             </main>
         </div>
@@ -47,8 +48,6 @@ const contentStyle = {
     paddingTop: '5vw',
     outline: 'none',
     backgroundcolor: '#638C71',
-    justifyContent: 'flex-start',
-    alignSelf: "left"
 }
 
 export default Slider
