@@ -227,12 +227,13 @@ li{
   }
   .slider{
     width: 73.4vw;
+    height: 40vw;
     box-shadow: 0 0 1px;
   }
   .slider button{
     height: 7vh;
     width: 14vw;
-    top: -7vh;
+    top: -68vh;
   }
   .bioImage{
     border-radius: 50%;
@@ -256,5 +257,6 @@ li{
   }
   html, body{
     overflow-y:hidden;
+    position:fixed;
   }
 }
