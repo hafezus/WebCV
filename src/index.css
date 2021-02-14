@@ -254,7 +254,7 @@ li{
   p{
     font-size: 12px;
   }
-  body{
+  html, body{
     overflow-y:hidden;
   }
 }
