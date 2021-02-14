@@ -19,27 +19,23 @@ const slideUp = (event) =>{
 const Slider = (tabData) => {
     return (
         <div className="slider"  style={{backgroundColor: tabData.bgColor}}>
-            <button onClick={slideUp} style={{...tabStyle, marginLeft: tabData.leftMargin, backgroundColor: tabData.bgColor, fontSize: '0.8em', wordWrap:'break-word'}} className="sliderBtn">{tabData.title}</button>
+            <button onClick={slideUp} style={{marginLeft: tabData.leftMargin, backgroundColor: tabData.bgColor, wordWrap:'break-word'}} className="sliderBtn">{tabData.title}</button>
             {/* <a href="#">Hi</a> */}
             <main style={contentStyle}>
-                <p className="tabBody" style={{overflowY: 'auto'}}>
-                    <div dangerouslySetInnerHTML={{__html: tabData.body}}></div>
+                    <p className="tabBody" dangerouslySetInnerHTML={{__html: tabData.body}}></p>
                     {/* {tabData.body   } */}
-                </p>
             </main>
         </div>
     )
 }
 const tabStyle = {
-    fontSize: '16px',
-    padding: '10px',
-    width: '10.6vw',
+    fontSize: 'auto',
+    paddingTop: '4px',
     fontFamily: 'Consolas',
     border: 'none',
     borderTopLeftRadius: '25px',
     borderTopRightRadius: '25px',
-    outline: 'none',
-    backgroundcolor: '#638C71',
+    outline: 'none'
 }
 
 const contentStyle = {

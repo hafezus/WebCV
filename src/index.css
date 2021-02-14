@@ -6,78 +6,52 @@
   margin: 0;
   padding: 0;
 }
-
-@media only screen and (max-device-width: 480px) {
-  h1{
-    font-size-adjust: inherit;
-  }
-  h2{
-    font-size-adjust: inherit;
-  }
-}
-
-@media only screen 
-  and (min-device-width: 1242px) 
-  and (max-device-width: 2688px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait and Landscape */
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 4) {
-
-}
-
 #root{
   height: 100vh;
   width: 100vw;
   width: auto;
   background-color:white;
 }
-
 .App{
   display: flex;
   flex-direction:row;
   justify-content: center;
   height:100vh;
-  /* background-color: rgb(75, 61, 61); */
-  background-color: #343941;
-  /* background-image: url('./Constellation_BG.png');
-  background-size:1920px 1080px;
-  background-repeat:no-repeat; */
-}
-
+  background-color: #282c31;
+ }
 body{
-  overflow-y: hidden;
+  overflow: hidden;
  
 }
-
 .bio{
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #384949;
-  /* #384949; */
   display: flex;
   height: 100vh;
-  width:70%;
+  width:70vw;
   box-shadow: 0px 0px 3px;
   color: rgba(0, 0, 0, 0.438);
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
-  padding: 10px;
+  padding: 1rem;
 }
-
 .bio:hover{
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
   box-shadow: 0px 0px 10px;
 }
-
+h1{
+  font-family: Consolas;
+  font-weight:100;
+  color: #fff;
+  font-size: 4rem;
+  padding: 2vw;
+  margin-top: 10vh;
+  word-break: "break-word"
+}
 p{
   color: white;
   font-family: 'Poppins';
@@ -85,29 +59,29 @@ p{
   padding: 2em 2.5em;
   text-align: center;
 }
-
 h1{
   text-align: center;
   justify-content: center;
 }
-
 h2{
   text-align: center;
 }
-
 img{
   box-shadow: 0 0 10px;
   width: 18vw;
   height: auto;
 }
-
+.bioImage{
+  border-radius: 50%;
+  position: absolute;
+  top: 7vh;
+}
 img:hover{
   box-shadow: 0 0 20px;
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
   cursor:grab;
 }
-
 img:active{
   box-shadow: 0 0 20px;
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -116,45 +90,53 @@ img:active{
   height: auto;
   cursor:grabbing;
 }
-
 .sliders{
   height: 80vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
-
 .slider{
   display:flex;
   flex-direction: column;
   height: 80vh;
-  width: 54.63vw;
+  width: 70vw;
   position: absolute;
   bottom: 0;
-  left: -27.5vw;
-  /* background: #638C71; */
   align-content: center;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
   box-shadow: 0 -0.5px 3px;
 }
-
 .slider button{
   outline: none;
   border: none;
   height: 4vh;
-  width: 29.6vh;
+  width: 30vh;
   color: white;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: -4vh;
+  width: 10.6vw;
 }
-
+.sliderBtn{
+  font-size: auto;
+  padding-top: 4px;
+  font-family: 'Consolas';
+  border: none;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  outline: none;
+  height: 4vh;
+  width: 10.6vh;
+}
 .slider button:hover{
   box-shadow: none;
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
   text-shadow: 0 0 3px white;
 }
-
 .tabBody{
   color: white;
   font-family: 'Poppins';
@@ -162,15 +144,16 @@ img:active{
   padding: 0% 10%;
   text-align: center;
 }
-
-/* .slider button:focus{
-  top: 80vh;
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-duration: 1000ms;
-} */
-
+.socialsDiv{
+  position: absolute;
+  display: flex;
+  left: 88.3vw;
+  top:2vw;
+  flex-direction: row;
+  border-radius:50%;
+}
 .socialHandles {
-  height: 32px;
+  height: 2em;
   width: auto;
   margin-right: 2vw;
   outline: none;
@@ -178,20 +161,19 @@ img:active{
   border: none;
   border-radius: 50%;
 }
-
 .socialHandles:hover{
   outline: none;
   box-shadow: 0 0 0;
   color: white;
   cursor:pointer;
   border-radius: 50%;
-  height: 48px;
+  height: 3.2em;
   width: auto;
   animation:cubic-bezier(0.165, 0.84, 0.44, 1)
 }
-
 .socialHandles:active{
-  height: 32px;
+  height: 4rem;
+  transform: translateX(-1rem);
   width: auto;
   outline: none;
   box-shadow: 0 0 0;
@@ -199,16 +181,77 @@ img:active{
   cursor:default;
   border-radius: 50%;
 }
-
 li{
   list-style-type:none;
 }
 
+/* Media queries for mobile phones*/
 
+@media screen and (max-width: 480px){
 
-/* .socialHandles:hover:last-child{
-  outline: none;
-  box-shadow: 0 0 3px;
-  color: white;
-  cursor:default;
-} */
+  .socialsDiv{
+    display: flex;
+    flex-direction: column;
+    transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-duration: 500ms;
+  }
+  .socialHandles {
+    height: 3rem;
+    width: auto;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 50%;
+    margin-right: 0vw;
+    padding-bottom: 10px;
+  }
+  .bio{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #384949;
+    height: 100vh;
+    width:100vw;
+    color: rgba(0, 0, 0, 0.438);
+    padding: 0rem;
+  }
+  .bio h2{
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h1{
+    font-size: 2rem;
+    padding-top: 0vh;
+    margin-top: 0vh;
+  }
+  .slider{
+    width: 73.4vw;
+    box-shadow: 0 0 1px;
+  }
+  .slider button{
+    height: 7vh;
+    width: 14vw;
+    top: -7vh;
+  }
+  .bioImage{
+    border-radius: 50%;
+    position: absolute;
+    height: 14rem;
+    width: auto;
+    top: 15vh;
+    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+    transition-duration: 1000ms;
+  }
+  .bioImage:active{
+    box-shadow: 0 0 20px;
+    height: 20rem;
+    width: auto;
+    cursor:grabbing;
+    transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transition-duration: 500ms;
+  }
+  p{
+    font-size: 12px;
+  }
+}

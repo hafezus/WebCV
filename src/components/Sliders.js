@@ -11,7 +11,7 @@ const tabData = [
         entry-level Software Engineering job, specifically full-stack
         web development & mobile application development.`,
 
-		leftMargin: "0vw",
+		leftMargin: "0",
 		bgColor: "#638C71",
 	},
 	{
@@ -28,7 +28,7 @@ const tabData = [
 		</ul>
         `,
 
-		leftMargin: "11vw",
+		leftMargin: "14.85vw",
 		bgColor: "#63A599",
 	},
 	{
@@ -38,7 +38,7 @@ const tabData = [
         IaaS services in Google Cloud Platform under the
         mentorship of Mr. Mohamed Elayyan`,
 
-		leftMargin: "22vw",
+		leftMargin: "29.7vw",
 		bgColor: "#879576",
 	},
 	{
@@ -79,7 +79,7 @@ const tabData = [
         Development
         `,
 
-		leftMargin: "33vw",
+		leftMargin: "44.55vw",
 		bgColor: "#7FA187",
 	},
 	{
@@ -87,7 +87,7 @@ const tabData = [
 		title: "Additional Info",
 		body: "I like to cook",
 
-		leftMargin: "44vw",
+		leftMargin: "59.4vw",
 		bgColor: "#35553E",
 	},
 ];
@@ -98,11 +98,6 @@ const Sliders = () => {
 			className="sliders"
 			style={{ position: "absolute", bottom: "-80vh", backgroundColor: "red" }}
 		>
-			{/* <Slider {...tabData[0]} />
-			<Slider {...tabData[1]} />
-			<Slider {...tabData[2]} />
-			<Slider {...tabData[3]} />
-			<Slider {...tabData[4]} /> */}
 			{tabData.map((sliderData, idx) => (
                 <Slider {...sliderData} />    
 			))}
