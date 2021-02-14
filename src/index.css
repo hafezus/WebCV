@@ -255,7 +255,7 @@ li{
   p{
     font-size: 12px;
   }
-  html, body{
+  body{
     overflow-y:hidden;
     position:fixed;
   }
