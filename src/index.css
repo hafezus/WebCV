@@ -218,6 +218,7 @@ li{
   body {
     overflow:hidden;
     /* position:fixed; */
+    height: 100%;
   }
 
   .socialsDiv{
