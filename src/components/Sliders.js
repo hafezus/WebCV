@@ -25,7 +25,7 @@ const tabData = [
 		to embrace newer technologies. But I want to fix that. The web is changing every day and it is time to
 		accept these changes with open arms.`,
 
-		leftMargin: "1.25vw",
+		leftMargin: 3 + (12)*0 + "vw",
 		bgColor: "#638C71",
 	},
 	{
@@ -42,7 +42,7 @@ const tabData = [
 		</ul>
         `,
 
-		leftMargin: "14.85vw",
+		leftMargin: (4 + 12)*1 + "vw",
 		bgColor: "#63A599",
 	},
 	{
@@ -52,7 +52,7 @@ const tabData = [
         IaaS services in Google Cloud Platform under the
         mentorship of Mr. Mohamed Elayyan`,
 
-		leftMargin: "29.7vw",
+		leftMargin: 5 + (12)*2 + "vw",
 		bgColor: "#879576",
 	},
 	{
@@ -66,6 +66,7 @@ const tabData = [
         - Java
         - Kotlin
         - Python 3
+        - C++
         - Django Framework
         - Linux/Windows CLI
         - Git & GitHub
@@ -73,13 +74,11 @@ const tabData = [
         - Cloud Computing
         - External APIs
         - Firebase Firestore DB
-        - Figma (UX/UI Design)
-        - Mongoose DB</li>
-        - MySQL Relational DB
-        - C++
+        - Mongoose DB
+		- Figma (UX/UI Design)
 		<br/>
 		<br/>
-        Some exposure to:
+        Experience with:
 		<br/>
 		- MATLAB: Applied Numerical Methods in my
         Numerical Analysis course at AUS
@@ -93,7 +92,7 @@ const tabData = [
         Development
         `,
 
-		leftMargin: "44.55vw",
+		leftMargin: 6 + (12)*3  + "vw",
 		bgColor: "#7FA187",
 	},
 	{
@@ -101,7 +100,7 @@ const tabData = [
 		title: "Additional Info",
 		body: "I like to cook",
 
-		leftMargin: "58.15vw",
+		leftMargin: 7+ (12)*4 + "vw",
 		bgColor: "#35553E",
 	},
 ];

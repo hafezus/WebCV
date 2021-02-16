@@ -8,9 +8,10 @@
 }
 #root{
   height: 100vh;
-  width: 100vw;
+  width: auto;
   width: auto;
   background-color:white;
+  overflow-y: hidden;
 }
 .App{
   display: flex;
@@ -18,6 +19,11 @@
   justify-content: center;
   height:200vh;
   background-color: #282c31;
+  
+  background-image:url('./Constellation_BG.png');
+  background-size: 1920px 1080px;
+  background-repeat: no-repeat;
+  background-position:center center;
  }
 body{
   overflow: hidden;
@@ -29,7 +35,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #384949;
+  background-color: #2d3136;
   display: flex;
   height: 100vh;
   width:70vw;
@@ -45,13 +51,31 @@ body{
   box-shadow: 0px 0px 10px;
 }
 h1{
-  font-family: Consolas;
+  font-family: "Poppins";
   font-weight:100;
   color: #fff;
   font-size: 4rem;
   padding: 2vw;
   margin-top: 10vh;
   word-break: "break-word"
+}
+.wave {
+  animation-name: wave-animation;  
+  animation-duration: 2.5s;        
+  animation-iteration-count: infinite;  
+  transform-origin: 70% 70%;      
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  
+  100% { transform: rotate( 0.0deg) }
 }
 p{
   color: white;
@@ -107,30 +131,34 @@ img:active{
   align-content: center;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
-  box-shadow: 0 -0.5px 3px;
+  box-shadow: 0px 0px 1px;
 }
-.slider button{
+/* .slider button{
   outline: none;
   border: none;
   height: 4vh;
-  width: 30vh;
   color: white;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: -4vh;
   width: 10.6vw;
-}
+} */
 .sliderBtn{
   font-size: auto;
   padding-top: 4px;
   font-family: 'Consolas';
   border: none;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  /* border-top-left-radius: 25px;
+  border-top-right-radius: 25px; */
+  color: white;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
   outline: none;
   height: 4vh;
-  width: 10.6vh;
+  top: -4vh;
+  width: 12vw;
 }
 .slider button:hover{
   box-shadow: none;
@@ -144,6 +172,7 @@ img:active{
   font-weight: 100;
   padding: 0% 10%;
   text-align: center;
+  overflow-y:auto;
 }
 .socialsDiv{
   position: absolute;
@@ -211,11 +240,15 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #384949;
+    background-color: #313c49;
     height: 100vh;
     width:100vw;
     color: rgba(0, 0, 0, 0.438);
     padding: 0rem;
+    background-image:url('./Constellation_BG.png');
+  background-size: 2732px 2048px ;
+  background-repeat: no-repeat;
+  background-position:center center;
   }
   .bio h2{
     font-size: 1.2rem;
@@ -231,9 +264,10 @@ li{
     box-shadow: 0 0 1px;
   }
   .slider button{
-    height: -7vh;
-    width: 13vw;
+    height: 10vh;
+    width: 10.6vw;
     margin-left: 0;
+    top: -10vh;
   }
   .bioImage{
     border-radius: 50%;

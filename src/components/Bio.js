@@ -9,7 +9,7 @@ const Bio = () => {
             <Socials />
             <img src={MyImage} alt="" className="bioImage"></img>
             <h1>
-                Hello, I'm Hafez.👋
+                Hello, I'm Hafez.<span class="wave">👋</span>
             </h1>
             <h2 style={discriptionStyle}><code style={codeStyle}>&lt;code&gt;</code> Software Engineer, Open-Source Advocate, Code Fanatic <code style={codeStyle}>&lt;/code&gt;</code></h2>
         </div>
