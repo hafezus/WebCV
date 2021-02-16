@@ -217,7 +217,7 @@ li{
 
   body {
     overflow:hidden;
-    position:fixed;
+    /* position:fixed; */
   }
 
   .socialsDiv{
