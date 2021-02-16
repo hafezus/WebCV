@@ -26,7 +26,7 @@ const tabData = [
 		accept these changes with open arms.`,
 
 		leftMargin: 3 + (12)*0 + "vw",
-		bgColor: "#638C71",
+		bgColor: "#397367",
 	},
 	{
 		id: 2,
@@ -43,7 +43,7 @@ const tabData = [
         `,
 
 		leftMargin: (4 + 12)*1 + "vw",
-		bgColor: "#63A599",
+		bgColor: "#1E5C5B",
 	},
 	{
 		id: 3,
@@ -53,7 +53,7 @@ const tabData = [
         mentorship of Mr. Mohamed Elayyan`,
 
 		leftMargin: 5 + (12)*2 + "vw",
-		bgColor: "#879576",
+		bgColor: "#5DA399",
 	},
 	{
 		id: 4,
@@ -93,15 +93,15 @@ const tabData = [
         `,
 
 		leftMargin: 6 + (12)*3  + "vw",
-		bgColor: "#7FA187",
+		bgColor: "#42858C",
 	},
 	{
 		id: 5,
-		title: "Additional Info",
+		title: "Projects",
 		body: "I like to cook",
 
 		leftMargin: 7+ (12)*4 + "vw",
-		bgColor: "#35553E",
+		bgColor: "#3C5F64",
 	},
 ];
 
