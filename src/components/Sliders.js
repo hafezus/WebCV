@@ -5,11 +5,25 @@ import Slider from "./Slider";
 const tabData = [
 	{
 		id: 1,
-		title: "Job Description",
-		body: `Passionate and hardworking Computer Science graduate
-        from The American University of Sharjah (AUS), seeking an
-        entry-level Software Engineering job, specifically full-stack
-        web development & mobile application development.`,
+		title: "About",
+		body: `Passionate and hardworking programmer. I love what I do and I do
+		it with full dedication. 
+		
+		<br/>
+		<br/>
+		
+		My goal is to make the web a cleaner place where clean, 
+		easy to use, responsive and blazing fast websites that are developed with new technologies, 
+		due to the fact that currently there are many websites hosted by big companies that are just ugly, unresponsive and 
+		difficult to use (even from personal experience). 
+		<br/>
+		<br/>
+		E-commerce is heavily lacking in the Middle-East, despite the growing demand of online means of 
+		purchasing goods increasing hundredfold, especially in the light of COVID-19. I believe old web 
+		practices and languages, such as Java, PHP and ASP NET frameworks and frontend libraries such as 
+		JQuery, JSP/JSFs, overusage of Relational Databases are very outdated and companies are simply hesitant 
+		to embrace newer technologies. But I want to fix that. The web is changing every day and it is time to
+		accept these changes with open arms.`,
 
 		leftMargin: "1.25vw",
 		bgColor: "#638C71",
@@ -34,7 +48,7 @@ const tabData = [
 	{
 		id: 3,
 		title: "Work Experience",
-		body: `Beta IT internship <br/> ▪ Explored cloud security and
+		body: `Beta IT internship <br/> - Explored cloud security and
         IaaS services in Google Cloud Platform under the
         mentorship of Mr. Mohamed Elayyan`,
 
@@ -46,36 +60,36 @@ const tabData = [
 		title: "Skills",
 		body: `Proficient with:
 		<br/>
-		▪ JavaScript (ES6)
-        ▪ Node.js/Express
-        ▪ HTML/CSS<
-        ▪ Java
-        ▪ Kotlin
-        ▪ Python 3
-        ▪ Django Framework
-        ▪ Linux/Windows CLI
-        ▪ Git & GitHub
-        ▪ Google Cloud Platform Services
-        ▪ Cloud Computing
-        ▪ External APIs
-        ▪ Firebase Firestore DB
-        ▪ Figma (UX/UI Design)
-        ▪ Mongoose DB</li>
-        ▪ MySQL Relational DB
-        ▪ C++
+		- JavaScript (ES6)
+        - Node.js/Express
+        - HTML/CSS<
+        - Java
+        - Kotlin
+        - Python 3
+        - Django Framework
+        - Linux/Windows CLI
+        - Git & GitHub
+        - Google Cloud Platform Services
+        - Cloud Computing
+        - External APIs
+        - Firebase Firestore DB
+        - Figma (UX/UI Design)
+        - Mongoose DB</li>
+        - MySQL Relational DB
+        - C++
 		<br/>
 		<br/>
         Some exposure to:
 		<br/>
-		▪ MATLAB: Applied Numerical Methods in my
+		- MATLAB: Applied Numerical Methods in my
         Numerical Analysis course at AUS
 		<br/>
-        ▪ Minitab: Applied statistical methods for sampled
+        - Minitab: Applied statistical methods for sampled
         data to generate data trends of AUS students for
         my Statistics course project.
-        ▪ Microsoft Office Suite – Used in academic
+        - Microsoft Office Suite – Used in academic
         assignments and projects.
-        ▪ Software Engineering Lifecycles – Agile
+        - Software Engineering Lifecycles – Agile
         Development
         `,
 

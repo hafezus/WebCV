@@ -20,7 +20,8 @@
   background-color: #282c31;
  }
 body{
-  overflow-y: hidden;
+  overflow: hidden;
+  position:relative;
   background-color: #282c31;
 }
 .bio{
@@ -91,7 +92,7 @@ img:active{
   cursor:grabbing;
 }
 .sliders{
-  height: 80vh;
+  height: 0vh;
   display: flex;
   justify-content:center;
   align-items: center;
