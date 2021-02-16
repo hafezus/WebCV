@@ -217,7 +217,7 @@ li{
 
   body {
     overflow:hidden;
-    /* position:fixed; */
+    position:fixed;
   }
 
   .socialsDiv{
@@ -246,10 +246,10 @@ li{
     width:100vw;
     color: rgba(0, 0, 0, 0.438);
     padding: 0rem;
-    background-image:url('./Constellation_BG.png');
-    background-size: 2732px 2048px ;
-    background-repeat: no-repeat;
-    background-position:center center;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1000ms;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='268' height='32.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%231f292c' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    background-position-y: 10vh;
   }
   .bio h2{
     font-size: 1.2rem;
@@ -263,7 +263,7 @@ li{
   .slider{
     box-shadow: 0 0 1px;
   }
-  .slider button{
+  .sliderBtn {
     height: 10vh;
     width: 10.6vw;
     margin-left: 0;

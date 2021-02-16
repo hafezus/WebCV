@@ -97,7 +97,7 @@ const tabData = [
 	},
 	{
 		id: 5,
-		title: "Additional Info",
+		title: "Projects",
 		body: "I like to cook",
 
 		leftMargin: 7+ (12)*4 + "vw",
