@@ -11,7 +11,7 @@ const tabData = [
         entry-level Software Engineering job, specifically full-stack
         web development & mobile application development.`,
 
-		leftMargin: "0",
+		leftMargin: "1.25vw",
 		bgColor: "#638C71",
 	},
 	{
@@ -87,7 +87,7 @@ const tabData = [
 		title: "Additional Info",
 		body: "I like to cook",
 
-		leftMargin: "59.4vw",
+		leftMargin: "58.15vw",
 		bgColor: "#35553E",
 	},
 ];
