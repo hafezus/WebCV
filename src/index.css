@@ -20,9 +20,8 @@
   background-color: #282c31;
  }
 body{
-  overflow: hidden;
-  background-color: #282c31
- 
+  overflow-y: hidden;
+  background-color: #282c31;
 }
 .bio{
   display:flex;
@@ -232,7 +231,8 @@ li{
   }
   .slider button{
     height: -7vh;
-    width: 14vw;
+    width: 13vw;
+    margin-left: 0;
   }
   .bioImage{
     border-radius: 50%;
