@@ -11,14 +11,14 @@ const Bio = () => {
             <h1>
                 Hello, I'm Hafez.<span class="wave">👋</span>
             </h1>
-            <h2 style={discriptionStyle}><code style={codeStyle}>&lt;code&gt;</code> Software Engineer, Open-Source Advocate, Code Fanatic <code style={codeStyle}>&lt;/code&gt;</code></h2>
+            <h2 style={discriptionStyle}>Software Engineer, Open-Source Advocate, Code Fanatic</h2>
         </div>
     )
 }
 
 
 const discriptionStyle = {
-    fontFamily: 'Consolas',
+    fontFamily: 'Poppins',
     fontWeight:'100',
     color: "#ccc",
     paddingBottom: '2vh',
