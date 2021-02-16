@@ -79,7 +79,7 @@ h1{
 }
 p{
   color: white;
-  font-family: 'Poppins';
+  font-family: 'Poppins', 'Consolas';
   font-weight: 100;
   padding: 2em 2.5em;
   text-align: center;
@@ -147,7 +147,7 @@ img:active{
 .sliderBtn{
   font-size: auto;
   padding-top: 4px;
-  font-family: 'Consolas';
+  font-family: 'Consolas', 'Poppins';
   border: none;
   /* border-top-left-radius: 25px;
   border-top-right-radius: 25px; */
@@ -219,6 +219,10 @@ li{
 
 @media screen and (max-width: 480px){
 
+  body {
+    overflow:hidden;
+  }
+
   .socialsDiv{
     display: flex;
     flex-direction: column;
@@ -246,9 +250,9 @@ li{
     color: rgba(0, 0, 0, 0.438);
     padding: 0rem;
     background-image:url('./Constellation_BG.png');
-  background-size: 2732px 2048px ;
-  background-repeat: no-repeat;
-  background-position:center center;
+    background-size: 2732px 2048px ;
+    background-repeat: no-repeat;
+    background-position:center center;
   }
   .bio h2{
     font-size: 1.2rem;
@@ -260,7 +264,6 @@ li{
     margin-top: 0vh;
   }
   .slider{
-    width: 73.4vw;
     box-shadow: 0 0 1px;
   }
   .slider button{
