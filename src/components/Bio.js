@@ -9,9 +9,11 @@ const Bio = () => {
             <Socials />
             <img src={MyImage} alt="" className="bioImage"></img>
             <h1>
-                Hello, I'm Hafez.<span class="wave">👋</span>
+                Hello, I'm Hafez.<span className="wave">👋</span>
             </h1>
             <h2 style={discriptionStyle}>Software Engineer, Open-Source Advocate, Code Fanatic</h2>
+            
+
         </div>
     )
 }
@@ -25,11 +27,5 @@ const discriptionStyle = {
     paddingTop: '2vh',
     justifyContent: 'center'
 }
-
-const codeStyle = {
-    color: "#777",
-    fontSize: "2rem",
-}
-
 
 export default Bio

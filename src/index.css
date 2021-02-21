@@ -6,6 +6,18 @@
   margin: 0;
   padding: 0;
 }
+::-webkit-scrollbar{
+  background-color:transparent;
+  width:4px;
+}
+::-webkit-scrollbar-track{
+  background-color:transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color:#7fc7a7;
+  border-radius:16px;
+  border: 4px solid transparent
+}
 #root{
   height: 100vh;
   width: auto;
@@ -17,7 +29,8 @@
   display: flex;
   flex-direction:row;
   justify-content: center;
-  height:200vh;
+  height:100vh;
+  width: auto;
   background-color: #35393C;
   background-color: #202224;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='268' height='32.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%231f292c' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
@@ -52,7 +65,7 @@ h1{
   color: #fff;
   font-size: 4rem;
   padding: 2vw;
-  margin-top: 10vh;
+  margin-top: 4vh;
   word-break: "break-word"
 }
 .wave {
@@ -61,6 +74,7 @@ h1{
   animation-iteration-count: infinite;  
   transform-origin: 70% 70%;      
   display: inline-block;
+  
 }
 
 @keyframes wave-animation {
@@ -89,13 +103,13 @@ h2{
 }
 img{
   box-shadow: 0 0 10px;
-  width: 18vw;
-  height: auto;
+  height: 18vw;
+  width: auto;
 }
 .bioImage{
   border-radius: 50%;
-  position: absolute;
   top: 7vh;
+  z-index:2;
 }
 img:hover{
   box-shadow: 0 0 20px;
@@ -128,6 +142,7 @@ img:active{
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
   box-shadow: 0px 0px 1px;
+  z-index: 3;
 }
 /* .slider button{
   outline: none;
@@ -168,15 +183,16 @@ img:active{
   font-weight: 100;
   padding: 0% 10%;
   text-align: center;
-  overflow-y:auto;
+  overflow-y:hidden;
 }
 .socialsDiv{
   position: absolute;
   display: flex;
-  left: 88.3vw;
+  right: 0vw;
   top:2vw;
   flex-direction: row;
   border-radius:50%;
+  right: -1vw;
 }
 .socialHandles {
   height: 2em;
@@ -186,6 +202,8 @@ img:active{
   box-shadow: none;
   border: none;
   border-radius: 50%;
+  color: white;
+  transition:cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
 }
 .socialHandles:hover{
   outline: none;
@@ -195,7 +213,7 @@ img:active{
   border-radius: 50%;
   height: 3.2em;
   width: auto;
-  animation:cubic-bezier(0.165, 0.84, 0.44, 1)
+  transition:cubic-bezier(0.165, 0.84, 0.44, 1) 500ms;
 }
 .socialHandles:active{
   height: 4rem;
@@ -212,6 +230,25 @@ li{
 }
 
 /* Media queries for mobile phones*/
+
+@media screen and (max-width: 1820px){
+  .socialsDiv{
+    display: flex;
+    right: 0vw;
+    top:2vw;
+    flex-direction: column;
+    border-radius:50%;
+    right: 1vw;
+  }
+  .socialHandles{
+    margin-bottom: 10px;
+  }
+
+  .App{
+    width: auto;
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 480px){
 
@@ -266,14 +303,14 @@ li{
   }
   .sliderBtn {
     height: 10vh;
-    width: 10.6vw;
-    margin-left: 0;
+    width: 13vw;
+    margin-left: 2vw;
     top: -10vh;
   }
   .bioImage{
     border-radius: 50%;
     position: absolute;
-    height: 14rem;
+    height: 18vw;
     width: auto;
     top: 10vh;
     transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
