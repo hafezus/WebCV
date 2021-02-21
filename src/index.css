@@ -274,6 +274,7 @@ li{
     margin-right: 0vw;
     padding-bottom: 10px;
   }
+  
   .bio{
     display:flex;
     flex-direction: column;
@@ -288,6 +289,7 @@ li{
     transition-duration: 1000ms;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='268' height='32.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%231f292c' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
     background-position-y: 10vh;
+    position:fixed;
   }
   .bio h2{
     font-size: 1.2rem;
@@ -310,15 +312,15 @@ li{
   .bioImage{
     border-radius: 50%;
     position: absolute;
-    height: 18vw;
+    height: 20vh;
     width: auto;
-    top: 10vh;
+    top: 15vh;
     transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
     transition-duration: 1000ms;
   }
   .bioImage:active{
     box-shadow: 0 0 20px;
-    height: 20rem;
+    height: 22vh;
     width: auto;
     cursor:grabbing;
     transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
