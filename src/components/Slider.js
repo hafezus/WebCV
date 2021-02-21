@@ -12,7 +12,7 @@ const slideUp = (event) => {
 		event.target.parentNode.style.transform = "";
 		slideToggler = 0;
 	} else {
-		event.target.parentNode.style.transform = "translateY(-80vh)";
+		event.target.parentNode.style.transform = "translateY(-60vh)";
 		slideToggler = -1;
 		//window.close()
 	}

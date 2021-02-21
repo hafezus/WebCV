@@ -31,6 +31,7 @@
   justify-content: center;
   height:100vh;
   width: auto;
+  position:relative;
   background-color: #35393C;
   background-color: #202224;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='268' height='32.2' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%231f292c' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
@@ -101,29 +102,20 @@ h1{
 h2{
   text-align: center;
 }
-img{
-  box-shadow: 0 0 10px;
+.bioImage{
+  box-shadow: 0 0 5px;
   height: 18vw;
   width: auto;
-}
-.bioImage{
   border-radius: 50%;
   top: 7vh;
   z-index:2;
+  transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-duration: 500ms;
 }
 img:hover{
-  box-shadow: 0 0 20px;
+  box-shadow: 0 0 10px;
   transition:cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-duration: 1000ms;
-  cursor:grab;
-}
-img:active{
-  box-shadow: 0 0 20px;
-  transition:cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition-duration: 1000ms;
-  width: 32vw;
-  height: auto;
-  cursor:grabbing;
+  transition-duration: 500ms;
 }
 .sliders{
   height: 0vh;
@@ -135,10 +127,10 @@ img:active{
 .slider{
   display:flex;
   flex-direction: column;
-  height: 80vh;
+  height: 60vh;
   width: 70vw;
   position: absolute;
-  bottom: 0;
+  bottom: 20vh;
   align-content: center;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-duration: 1000ms;
@@ -181,13 +173,14 @@ img:active{
 .tabBody{
   color: white;
   font-family: 'Poppins';
+  font-size: 14px;
   font-weight: 100;
   padding: 0% 10%;
   text-align: center;
   overflow-y:hidden;
 }
 .socialsDiv{
-  position: absolute;
+  position:absolute;
   display: flex;
   right: 0vw;
   top:2vw;
@@ -248,6 +241,7 @@ li{
   .App{
     width: auto;
     height: 100vh;
+    padding: 10px;
     overflow: hidden;
   }
 }
@@ -302,6 +296,9 @@ li{
     padding-top: 0vh;
     margin-top: 0vh;
   }
+  .sliders{
+    height: 0vh;
+  }
   .slider{
     box-shadow: 0 0 1px;
   }
@@ -317,16 +314,11 @@ li{
     height: 20vh;
     width: auto;
     top: 15vh;
-    transition:cubic-bezier(0.6, -0.28, 0.735, 0.045);
-    transition-duration: 1000ms;
   }
   .bioImage:active{
     box-shadow: 0 0 20px;
     height: 22vh;
     width: auto;
-    cursor:grabbing;
-    transition:cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    transition-duration: 500ms;
   }
   p{
     font-size: 12px;

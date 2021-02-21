@@ -6,9 +6,7 @@ const tabData = [
 	{
 		id: 1,
 		title: "About",
-		body: `Passionate and hardworking programmer. I love what I do and I do
-		it with full dedication. 
-		
+		body: `Passionate and hardworking programmer. 
 		<br/>
 		<br/>
 		
@@ -18,27 +16,12 @@ const tabData = [
 		difficult to use (even from personal experience). 
 		<br/>
 		<br/>
-		E-commerce is heavily lacking in the Middle-East, despite the growing demand of online means of 
-		purchasing goods increasing hundredfold, especially in the light of COVID-19. I believe old web 
-		practices and languages, such as Java, PHP and ASP NET frameworks and frontend libraries such as 
-		JQuery, JSP/JSFs, overusage of Relational Databases are very outdated and companies are simply hesitant 
-		to embrace newer technologies. But I want to fix that. The web is changing every day and it is time to
-		accept these changes with open arms.
-		<br/>
-		<br/>
 		
-		My goal is to make the web a cleaner place where clean, 
-		easy to use, responsive and blazing fast websites that are developed with new technologies, 
-		due to the fact that currently there are many websites hosted by big companies that are just ugly, unresponsive and 
-		difficult to use (even from personal experience). 
+		My goal is to make the web a cleaner place where clean, secure,
+		easy to use, responsive and blazing fast using latest technologies, especially in the field of E-commerce, which is in my
+		opinion, is very much lacking here in the UAE.
 		<br/>
 		<br/>
-		E-commerce is heavily lacking in the Middle-East, despite the growing demand of online means of 
-		purchasing goods increasing hundredfold, especially in the light of COVID-19. I believe old web 
-		practices and languages, such as Java, PHP and ASP NET frameworks and frontend libraries such as 
-		JQuery, JSP/JSFs, overusage of Relational Databases are very outdated and companies are simply hesitant 
-		to embrace newer technologies. But I want to fix that. The web is changing every day and it is time to
-		accept these changes with open arms.
 		`,
 
 		leftMargin: 3 + (12)*0 + "vw",
