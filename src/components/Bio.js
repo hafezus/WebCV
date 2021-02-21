@@ -2,6 +2,7 @@ import React from 'react'
 
 import Socials from './Socials'
 import MyImage from '../MyImage.jpg'
+import {AiOutlineCode} from "react-icons/ai"
 
 const Bio = () => {
     return (
@@ -11,7 +12,7 @@ const Bio = () => {
             <h1>
                 Hello, I'm Hafez.<span className="wave">👋</span>
             </h1>
-            <h2 style={discriptionStyle}>Software Engineer, Open-Source Advocate, Code Fanatic</h2>
+            <h2 style={discriptionStyle}>Software Engineer, Open-Source Advocate, Code Fanatic <AiOutlineCode style={{transform:"translateY(4px)", color: "#F17767"}}/></h2>
             
 
         </div>

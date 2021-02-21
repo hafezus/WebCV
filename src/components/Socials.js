@@ -12,7 +12,7 @@ const Socials = () => {
             <a href="https://github.com/hafezus" target="_blank" rel="noreferrer">
                 <AiFillGithub className="socialHandles"/>
             </a>
-            <a href="www.linkedin.com/in/hafezusman" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/hafezusman/" target="_blank" rel="noreferrer">
                 <AiFillLinkedin className="socialHandles"/>
             </a>
             <a href="https://www.instagram.com/hafzus/?hl=en" target="_blank" rel="noreferrer">
