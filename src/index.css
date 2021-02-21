@@ -247,7 +247,8 @@ li{
 
   .App{
     width: auto;
-    height: auto;
+    height: 100vh;
+    overflow: hidden;
   }
 }
 
