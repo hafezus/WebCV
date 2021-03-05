@@ -24,7 +24,7 @@ const tabData = [
 		<br/>
 		`,
 
-		leftMargin: 3 + (12)*0 + "vw",
+		leftMargin: 3 + 12 * 0 + "vw",
 		bgColor: "#397367",
 	},
 	{
@@ -41,7 +41,7 @@ const tabData = [
 		</ul>
         `,
 
-		leftMargin: (4 + 12)*1 + "vw",
+		leftMargin: (4 + 12) * 1 + "vw",
 		bgColor: "#1E5C5B",
 	},
 	{
@@ -51,7 +51,7 @@ const tabData = [
         IaaS services in Google Cloud Platform under the
         mentorship of Mr. Mohamed Elayyan`,
 
-		leftMargin: 5 + (12)*2 + "vw",
+		leftMargin: 5 + 12 * 2 + "vw",
 		bgColor: "#5DA399",
 	},
 	{
@@ -61,6 +61,7 @@ const tabData = [
 		<br/>
 		- JavaScript (ES6)
         - Node.js/Express
+		- React.js
         - HTML/CSS
         - Java
         - Kotlin
@@ -92,13 +93,38 @@ const tabData = [
 		
         `,
 
-		leftMargin: 6 + (12)*3  + "vw",
+		leftMargin: 6 + 12 * 3 + "vw",
 		bgColor: "#42858C",
 	},
 	{
 		id: 5,
-		title: "Projects",
-		body: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis viverra ipsum, in porta nisl posuere vitae. Nam in arcu non magna aliquet consectetur et eu justo. Sed euismod magna et feugiat vulputate. Maecenas nec lorem id lectus gravida faucibus ac vitae turpis. Pellentesque dapibus pulvinar neque vel elementum. Vivamus nibh nisl, luctus id dictum in, scelerisque eget ligula. Aliquam in ante in dui aliquam imperdiet. Quisque euismod pharetra est sed feugiat. Vestibulum ac nulla non tortor lacinia mollis. Vivamus massa tortor, bibendum condimentum nisl vel, vehicula sollicitudin elit. In non eros sed sem vulputate varius vitae vel libero. In facilisis lobortis neque, in vulputate neque.
+		title: "Additional Info",
+		body: `
+		- I hold a valid automatic UAE license.
+		<br/>
+		- I have a residency visa and require no employment sponsorship.
+		<br/>
+
+		`,
+
+		leftMargin: 7 + 12 * 4 + "vw",
+		bgColor: "#3C5F64",
+	},
+];
+
+const Sliders = () => {
+	return (
+		<div className="sliders" style={{ position: "absolute", bottom: "-80vh" }}>
+			{tabData.map((sliderData, idx) => (
+				<Slider {...sliderData} />
+			))}
+		</div>
+	);
+};
+
+{
+	/*
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec iaculis viverra ipsum, in porta nisl posuere vitae. Nam in arcu non magna aliquet consectetur et eu justo. Sed euismod magna et feugiat vulputate. Maecenas nec lorem id lectus gravida faucibus ac vitae turpis. Pellentesque dapibus pulvinar neque vel elementum. Vivamus nibh nisl, luctus id dictum in, scelerisque eget ligula. Aliquam in ante in dui aliquam imperdiet. Quisque euismod pharetra est sed feugiat. Vestibulum ac nulla non tortor lacinia mollis. Vivamus massa tortor, bibendum condimentum nisl vel, vehicula sollicitudin elit. In non eros sed sem vulputate varius vitae vel libero. In facilisis lobortis neque, in vulputate neque.
 
 		Integer vulputate accumsan velit vestibulum consequat. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi ut mi ac mauris congue ullamcorper. Vestibulum est ligula, commodo et ante rhoncus, faucibus varius nunc. Sed vitae magna dui. Morbi sit amet volutpat turpis, sit amet aliquam nunc. Nam sagittis, lectus suscipit rhoncus condimentum, erat sapien pellentesque purus, non dapibus tortor ligula quis erat. Vivamus et hendrerit lorem, vel eleifend eros. Proin at lacus vel urna cursus scelerisque dapibus a lectus.
 		
@@ -119,27 +145,9 @@ const tabData = [
 		Aenean ultricies maximus arcu in ullamcorper. Nulla vel fringilla quam, sed lacinia risus. Sed rhoncus pharetra massa vitae accumsan. Vestibulum viverra justo nec urna ullamcorper, eget mattis ante eleifend. Nulla non commodo massa, id pulvinar nunc. Nunc iaculis vestibulum congue. Vivamus non orci id enim suscipit luctus. Sed ornare, lacus nec consectetur mattis, enim lacus suscipit turpis, non lobortis nisi odio a magna. Morbi imperdiet elit tellus, a tincidunt dolor malesuada id. In ac velit et ligula semper vulputate.
 		
 		Vivamus feugiat lobortis ligula in tristique. Integer feugiat lectus augue, quis feugiat ex vehicula id. Proin id efficitur felis, vel dignissim ligula. Nulla quis nunc a neque condimentum facilisis vel eu ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-		
-		`,
 
-		leftMargin: 7+ (12)*4 + "vw",
-		bgColor: "#3C5F64",
-	},
-];
-
-const Sliders = () => {
-	return (
-		<div
-			className="sliders"
-			style={{ position: "absolute", bottom: "-80vh"}}
-		>
-			{tabData.map((sliderData, idx) => (
-                <Slider {...sliderData} />    
-			))}
-
-		</div>
-	);
-};
+*/
+}
 
 Sliders.defaultProps = {
 	tabData: {},

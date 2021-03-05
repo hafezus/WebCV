@@ -23,7 +23,7 @@
 	width: auto;
 	width: auto;
 	background-color: white;
-	overflow: hidden;
+	overflowg: hidden;
 }
 .App {
 	display: flex;
@@ -190,7 +190,7 @@ img:hover {
 	top: 2vw;
 	flex-direction: row;
 	border-radius: 50%;
-	right: -1vw;
+	right: 1vw;
 }
 .socialHandles {
 	height: 2em;
